@@ -1,0 +1,241 @@
+:root {
+  box-sizing: border-box;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.side-to-side {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav,
+footer {
+  background-color: #4e4e4e;
+  color: #fff;
+}
+
+.company-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 10px 0;
+}
+
+.navbar-links,
+.social-links {
+  display: flex;
+}
+
+.navbar-links li,
+.social-links li {
+  list-style: none;
+}
+
+.navbar-links a,
+.social-links a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  transition: all 0.15s;
+}
+
+.navbar-links a[disabled] {
+  cursor: not-allowed;
+}
+
+.navbar-links a:hover {
+  background-color: #fff;
+  color: #000;
+  border-radius: 4px;
+}
+
+.outer-background {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: calc(100vh - 50px);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("assets/img/Background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.inner-background {
+  width: 50%;
+}
+
+.promo {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.incentive {
+  height: 23.13px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.inner-background .button {
+  display: block;
+  width: 160px;
+  height: 40px;
+  text-align: center;
+  padding-top: 8px;
+  text-decoration: none;
+  color: #fff;
+  border: 3px solid #fff;
+  transition: all 1s linear;
+}
+
+.inner-background .button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.company-staff_intro,
+.services_intro {
+  margin-top: 0;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.company-staff_intro {
+  color: #152d41;
+}
+
+.specialists--container {
+  padding: 50px 0;
+}
+
+.specialists--container h4,
+p {
+  color: #000;
+}
+
+.specialists {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-description {
+  margin: 20px;
+}
+
+.staff-member--container {
+  display: flex;
+  align-items: center;
+}
+
+.staff-member--container:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.staff-member--container:nth-of-type(even) p,
+.staff-member--container:nth-of-type(even) h4 {
+  text-align: right;
+}
+
+.staff-member--container:nth-of-type(odd) p,
+.staff-member--container:nth-of-type(odd) h4 {
+  text-align: left;
+}
+
+.staff-member--image {
+  background-position: center;
+  background-size: cover;
+  height: 197px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.image-first {
+  background-image: url("https://randomuser.me/api/portraits/women/43.jpg");
+}
+
+.image-second {
+  background-image: url("https://randomuser.me/api/portraits/men/72.jpg");
+}
+
+.services--container {
+  background-color: #405d78;
+  padding: 50px 0;
+}
+
+.services_intro {
+  color: #fff;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  justify-content: center;
+  gap: 60px;
+}
+
+.service--tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  height: 200px;
+  transition: transform 0.5s linear;
+}
+
+.new--circle {
+  position: relative;
+}
+
+.new--circle span {
+  position: absolute;
+  left: -109.5px;
+  top: -86px;
+  background-color: #e07a64;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.service--tile:nth-of-type(1) {
+  flex-direction: column;
+}
+
+.service--tile:hover {
+  transform: scale(1.05);
+}
+
+.service-heading {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.info--small {
+  font-size: 16px;
+}
+
+.fa-brands {
+  font-size: 30px;
+}
