@@ -1,26 +1,26 @@
 export const services = [
   {
-    name: "Usługa 1",
+    name: "Service 1",
     isNew: true,
   },
   {
-    name: "Usługa 2",
+    name: "Service 2",
     isNew: false,
   },
   {
-    name: "Usługa 3",
+    name: "Service 3",
     isNew: false,
   },
   {
-    name: "Usługa 4",
+    name: "Service 4",
     isNew: false,
   },
   {
-    name: "Usługa 5",
+    name: "Service 5",
     isNew: false,
   },
   {
-    name: "Usługa 6",
+    name: "Service 6",
     isNew: false,
   },
 ];

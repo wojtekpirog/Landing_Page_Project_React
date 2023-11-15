@@ -1,17 +1,17 @@
 function Service_tile({ name, isNew }) {
-  if (isNew === true) {
+  if (isNew) {
     return (
-      <div className="service--tile">
-        <div className="new--circle">
+      <div className="service-tile new-item">
+        <div className="new-circle">
           <span></span>
         </div>
         <div className="service-heading">{name}</div>
-        <div className="info--small">(Nowość)</div>
+        <div className="info-small">(New)</div>
       </div>
     );
   }
   return (
-    <div className="service--tile">
+    <div className="service-tile">
       <div className="service-heading">{name}</div>
     </div>
   );

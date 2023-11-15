@@ -2,8 +2,13 @@ function Header() {
   return (
     <header>
       <nav>
-        <div className="container side-to-side">
+        <div className="container navbar-and-footer">
           <div className="company-name">My Company</div>
+          <button className="navbar-toggler">
+            <div></div>
+            <div></div>
+            <div></div>
+          </button>
           <ul className="navbar-links">
             <li>
               <a href="#about">About us</a>

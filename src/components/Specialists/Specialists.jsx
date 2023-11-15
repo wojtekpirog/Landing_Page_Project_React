@@ -3,10 +3,10 @@ import { specialists } from "../../data/staff.js";
 
 function Specialists() {
   return (
-    <div className="specialists--container" id="about">
+    <div className="specialists-container" id="about">
       <div className="container">
-        <div className="company-staff_intro">Our Specialists</div>
-        <div className="specialists">
+        <div className="company-staff-intro">Our Specialists</div>
+        <div className="flex">
           {specialists.map((element, index) => {
             return (
               <StaffMember
