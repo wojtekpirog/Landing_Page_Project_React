@@ -4,11 +4,11 @@ function BackgroundSection() {
       <div className="container">
         <div className="inner-background">
           <h1 className="promo">
-            Nasza firma oferuje najwyższej jakości produkty
+            Our company offers highest quality products.
           </h1>
-          <p className="incentive">Nie wierz nam na słowo - sprawdź</p>
-          <a className="button" href="#offer">
-            oferta
+          <p className="incentive">Don't take our word for it - check it out.</p>
+          <a className="button" href="#offer" draggable="true">
+            offer
           </a>
         </div>
       </div>
