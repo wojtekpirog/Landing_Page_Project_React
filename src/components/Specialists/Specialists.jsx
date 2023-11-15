@@ -5,7 +5,7 @@ function Specialists() {
   return (
     <div className="specialists--container" id="about">
       <div className="container">
-        <div className="company-staff_intro">Nasi specjaliści</div>
+        <div className="company-staff_intro">Our Specialists</div>
         <div className="specialists">
           {specialists.map((element, index) => {
             return (
