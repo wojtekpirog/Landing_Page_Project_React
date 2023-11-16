@@ -48,6 +48,7 @@ nav, footer {
   flex-direction: column;
   justify-content: space-between;
   width: 100vw;
+  margin-top: 16px;
   padding: 0;
 }
 
@@ -55,10 +56,12 @@ nav, footer {
   display: flex;  
   margin-top: 0;
   background-color: var(--gray);
+  align-items: center;
 }
 
 .navbar-links li {
   list-style: none;
+  padding: 10px 0;
 }
 
 .navbar-links a, .social-links a {
