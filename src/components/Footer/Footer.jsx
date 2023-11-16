@@ -9,10 +9,8 @@ import {
 function Footer() {
   return (
     <footer>
-      <div className="container navbar-and-footer">
-        <div>
-          <span>&copy; My Company 2023</span>
-        </div>
+      <div className="container navbar-and-footer page-footer">
+        <div>&copy; My Company 2023</div>
         <ul className="social-links">
           <li>
             <a href="#">

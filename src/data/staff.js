@@ -1,7 +1,7 @@
 export const specialists = [
   {
-    name: "Amandine",
-    surname: "Rolland",
+    name: "Ervin",
+    surname: "Howell",    
     position: "Marketing Director",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga praesentium corporis, autem fugiat repellendus unde saepe fugit nulla, totam ducimus reiciendis optio similique tempore sapiente porro aspernatur iure sed. Explicabo eaque rem asperiores possimus eligendi, neque hic quas error, voluptate corrupti ut architecto tenetur necessitatibus. Culpa quaerat voluptates expedita rerum.`,
   },

@@ -19,22 +19,16 @@ body {
   padding: 0;
 }
 
-/* .container {
-  width: 960px;
-  margin: 0 auto;
-} */
 .container {
   width: 96%;
   margin: 0 auto;
 }
 
-nav,
-footer {
+nav, footer {
   background-color: var(--gray);
   color: var(--white);
 }
 
-/* .side-to-side { */
 .navbar-and-footer { 
   height: 50px;
   display: flex;
@@ -49,10 +43,6 @@ footer {
   margin: 10px 0;
 }
 
-/* .navbar-links,
-.social-links {
-  display: flex;
-} */
 .navbar-links {
   display: none;
   flex-direction: column;
@@ -120,7 +110,6 @@ footer {
 .promo {
   font-size: 36px;
   font-weight: bold;
-  /* margin: 30px 0; */
 }
 
 .incentive {
@@ -151,16 +140,12 @@ footer {
   margin-bottom: 30px;
 }
 
-.company-staff-intro {
-  color: var(--grayish-blue);
+.company-staff-intro, .services-intro {
+  /* color: var(--grayish-blue); */
+  margin-bottom: 50px;
 }
 
-.specialists--container {
-  padding: 50px 0;
-}
-
-.specialists--container h4,
-p {
+.specialists-container h4, p {
   color: var(--black);
 }
 
@@ -179,20 +164,6 @@ p {
   align-items: center;
 }
 
-.employee-container:nth-of-type(even) {
-  flex-direction: row-reverse;
-}
-
-.employee-container:nth-of-type(even) p,
-.employee-container:nth-of-type(even) h4 {
-  text-align: right;
-}
-
-.employee-container:nth-of-type(odd) p,
-.employee-container:nth-of-type(odd) h4 {
-  text-align: left;
-}
-
 .employee-image {
   background-position: center;
   background-size: cover;
@@ -202,25 +173,20 @@ p {
 }
 
 .img-first {
-  background-image: url("https://randomuser.me/api/portraits/women/43.jpg");
+  background-image: url("./assets/img/Profile_photo_1.jpg");
 }
 
 .img-second {
-  background-image: url("https://randomuser.me/api/portraits/men/72.jpg");
+  background-image: url("./assets/img/Profile_photo_2.jpg");
 }
 
-.specialists-container, .services-container{
+.specialists-container, .services-container {
   padding: 50px 0;
 }
 
 .services-container {
   background-color: var(--grayish-blue);
   padding: 50px 0;
-}
-
-.services-intro {
-  color: var(--white);
-  margin-bottom: 50px;
 }
 
 .grid {
@@ -231,31 +197,33 @@ p {
 }
 
 .service-tile {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--white);
   color: var(--black);
-  height: 200px;
-  transition: transform 0.5s linear;
-}
-
-.new-circle {
-  position: relative;
-}
-
-.new-circle span {
-  position: absolute;
-  left: -109.5px;
-  top: -86px;
-  background-color: var(--new);
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
+  width: calc(100% - 120px);
+  aspect-ratio: 1;
+  transition: transform .25s linear;
 }
 
 .service-tile.new-item {
+  position: relative;
   flex-direction: column;
+  border: 4px solid var(--new);
+  overflow: hidden;
+}
+
+.new-item-badge {
+  position: absolute;
+  left: -30px;
+  top: 10px;
+  background-color: var(--new);
+  color: var(--white);
+  width: 100px;
+  text-align: center;
+  transform:rotate(-45deg);
 }
 
 .service-heading {
@@ -264,12 +232,29 @@ p {
   font-weight: bold;
 }
 
-.info-small {
-  font-size: 16px;
+.page-footer {
+  height: 100px;
+  justify-content: center;
+  padding-top: 18px;
+}
+
+.social-links {
+  display: flex;
+  padding-left: 0;
+  list-style-type: none;
 }
 
 .fa-brands {
   font-size: 30px;
+}
+
+@media only screen and (min-width: 576px) {
+  .grid {
+    grid-template-columns: repeat(2, 200px);
+  }
+  .service-tile {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -291,8 +276,22 @@ p {
   .company-staff-intro, .services-intro {
     text-align: left;
   }
-  .grid {
-    grid-template-columns: repeat(2, 200px);
+  .employee-container:nth-of-type(odd) {
+    flex-direction: row;
+  }
+  .employee-container:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+  .employee-container:nth-of-type(even) p,
+  .employee-container:nth-of-type(even) h4 {
+    text-align: right;
+  }
+  .employee-container:nth-of-type(odd) p,
+  .employee-container:nth-of-type(odd) h4 {
+    text-align: left;
+  } 
+  .page-footer {
+    padding-top: 0;
   }
 }
 
@@ -301,6 +300,10 @@ p {
     width: 960px;
   }
   .navbar-links a:not([disabled]):hover, .inner-background .button:hover {
+    background-color: var(--white);
+    color: var(--black);
+  }
+  .inner-background a:hover {
     background-color: var(--white);
     color: var(--black);
   }

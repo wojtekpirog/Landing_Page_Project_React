@@ -5,7 +5,7 @@ function ServicesSection() {
   return (
     <div className="services-container">
       <div className="container" id="offer">
-        <div className="services-intro">What does our company do?</div>
+        <div className="services-intro" style={{"color": "var(--white)"}}>What does our company do?</div>
         <div className="grid">
           {services.map(({ name, isNew }, index) => {
             return <ServiceTile key={index} name={name} isNew={isNew} />;
