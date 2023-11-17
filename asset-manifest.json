@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Landing_Page_Project_React_Responsive/static/css/main.d87ade41.css",
+    "main.js": "/Landing_Page_Project_React_Responsive/static/js/main.ff0013cb.js",
+    "static/media/Profile_photo_1.jpg": "/Landing_Page_Project_React_Responsive/static/media/Profile_photo_1.106d8c7dfb1e18bc3aa4.jpg",
+    "static/media/Profile_photo_2.jpg": "/Landing_Page_Project_React_Responsive/static/media/Profile_photo_2.1a08ae46773e97a60138.jpg",
+    "static/media/Background.jpg": "/Landing_Page_Project_React_Responsive/static/media/Background.4e23fa226269e09a8565.jpg",
+    "index.html": "/Landing_Page_Project_React_Responsive/index.html",
+    "main.d87ade41.css.map": "/Landing_Page_Project_React_Responsive/static/css/main.d87ade41.css.map",
+    "main.ff0013cb.js.map": "/Landing_Page_Project_React_Responsive/static/js/main.ff0013cb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d87ade41.css",
+    "static/js/main.ff0013cb.js"
+  ]
+}
