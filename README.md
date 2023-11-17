@@ -24,3 +24,6 @@ The technologies used to build the application are as follows:
   
 - **Flexible division of components**
   Every section of the webpage is a separate component. In addition, each specialist in the "Our Specialists" section, as well as each service in the "What does our company do?" section has its individual component. Each option takes the "isNew" parameter, which determines wheather the box dedicated to it will be marked with a "New" label.
+
+- **Symmetrical section with employees**
+  In the "Our Specialists" section, HTML elements containing data of the company's employees have a common CSS class and one modifier that makes each odd element start with a photo on the left, and each even element start with a photo on the right thanks to the CSS properties `nth-of-type(odd)` and `nth-of-type(even)`.
