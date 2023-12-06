@@ -25,7 +25,7 @@ function Header() {
               <a href="#offer">Offer</a>
             </li>
             <li>
-              <a href="#" onClick={e => e.preventDefault()} disabled>
+              <a href="#contact" onClick={e => e.preventDefault()} disabled>
                 Contact
               </a>
             </li>

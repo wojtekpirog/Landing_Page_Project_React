@@ -144,7 +144,7 @@ nav, footer {
 }
 
 .company-staff-intro, .services-intro {
-  /* color: var(--grayish-blue); */
+  color: var(--grayish-blue);
   margin-bottom: 50px;
 }
 
